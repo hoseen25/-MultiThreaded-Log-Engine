@@ -27,19 +27,3 @@ graph TD
     style D fill:#3B82F6,stroke:#1E3A8A,stroke-width:2px,color:#fff
     style E fill:#EC4899,stroke:#701A75,stroke-width:2px,color:#fff
     style F fill:#8B5CF6,stroke:#4C1D95,stroke-width:2px,color:#fff
-
-
-
-🛠️ Tech Stack & ToolsLayerTechnology / ToolKey Pattern & FeatureLanguage & ConcurrencyPython 3.10+ (threading)Mutex Locks & Thread-SafetyData ParsingPython re (Regex)High-Performance Pattern MatchingStorage EngineSQLite 3Relational Schema & Index OptimizationAutomation & CI/CDGitHub ActionsAutomated Cloud Workflows on UbuntuVersion ControlGit & GitHubCode Management & Architecture Docs
-
-
-📂 Project StructurePlaintextMultiThreaded-Log-Engine/
-├── .github/
-│   └── workflows/
-│       └── pipeline.yml       # GitHub Actions CI pipeline configuration
-├── .gitignore                 # Excludes raw logs and local DB files from Git
-├── README.md                  # Enterprise-grade project documentation
-├── log_analyzer.py            # ETL engine & SQL analytical query processor
-└── simulator.py               # Multi-threaded concurrent log generation script
-    style E fill:#EC4899,stroke:#701A75,stroke-width:2px,color:#fff
-    style F fill:#8B5CF6,stroke:#4C1D95,stroke-width:2px,color:#fff
