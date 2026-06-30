@@ -25,5 +25,19 @@ graph TD
     style B fill:#F59E0B,stroke:#78350F,stroke-width:2px,color:#fff
     style C fill:#10B981,stroke:#065F46,stroke-width:2px,color:#fff
     style D fill:#3B82F6,stroke:#1E3A8A,stroke-width:2px,color:#fff
+
+
+
+Concurrency Layer (simulator.py): Spawns multiple concurrent threads simulating isolated backend tasks. Uses thread synchronization (Threading.Lock) to prevent race conditions during heavy file I/O operations.ETL & Ingestion Layer (log_analyzer.py): A structured data pipeline that extracts raw unstructured log data using Regular Expressions (Regex), transforms it into typed schemas, and loads it to the storage layer.Database Tuning: Implements an explicit B-Tree Index on high-cardinality fields (thread_id) to optimize analytical querying speeds from linear scans $O(N)$ down to logarithmic lookups $O(\log N)$.Cloud Validation (CI): Integrated with GitHub Actions to provision ephemeral Linux containers on every code push, ensuring continuous integration and build stability.
+
+
+🛠️ Tech Stack & ToolsLayerTechnology / ToolKey Pattern & FeatureLanguage & ConcurrencyPython 3.10+ (threading)Mutex Locks & Thread-SafetyData ParsingPython re (Regex)High-Performance Pattern MatchingStorage EngineSQLite 3Relational Schema & Index OptimizationAutomation & CI/CDGitHub ActionsAutomated Cloud Workflows on UbuntuVersion ControlGit & GitHubCode Management & Architecture Docs📂 Project StructurePlaintextMultiThreaded-Log-Engine/
+├── .github/
+│   └── workflows/
+│       └── pipeline.yml       # GitHub Actions CI pipeline configuration
+├── .gitignore                 # Excludes raw logs and local DB files from Git
+├── README.md                  # Enterprise-grade project documentation
+├── log_analyzer.py            # ETL engine & SQL analytical query processor
+└── simulator.py               # Multi-threaded concurrent log generation script
     style E fill:#EC4899,stroke:#701A75,stroke-width:2px,color:#fff
     style F fill:#8B5CF6,stroke:#4C1D95,stroke-width:2px,color:#fff
