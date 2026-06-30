@@ -25,6 +25,8 @@ graph TD
     style B fill:#F59E0B,stroke:#78350F,stroke-width:2px,color:#fff
     style C fill:#10B981,stroke:#065F46,stroke-width:2px,color:#fff
     style D fill:#3B82F6,stroke:#1E3A8A,stroke-width:2px,color:#fff
+    style E fill:#EC4899,stroke:#701A75,stroke-width:2px,color:#fff
+    style F fill:#8B5CF6,stroke:#4C1D95,stroke-width:2px,color:#fff
 
 
 
